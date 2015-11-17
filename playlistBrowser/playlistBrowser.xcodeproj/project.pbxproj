@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F80C8AB41BD2F78900FFEBA0 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80C8AB31BD2F78900FFEBA0 /* PlaylistViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F80C8AB61BD2F7D900FFEBA0 /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80C8AB51BD2F7D900FFEBA0 /* SongViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F818B9931BD02BD70021CDDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818B9921BD02BD70021CDDB /* AppDelegate.swift */; };
+		F818B9951BD02BD70021CDDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818B9941BD02BD70021CDDB /* ViewController.swift */; };
+		F818B9981BD02BD70021CDDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F818B9961BD02BD70021CDDB /* Main.storyboard */; };
+		F818B99A1BD02BD70021CDDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F818B9991BD02BD70021CDDB /* Assets.xcassets */; };
+		F818B99D1BD02BD70021CDDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F818B99B1BD02BD70021CDDB /* LaunchScreen.storyboard */; };
+		F818B9A81BD02BD70021CDDB /* playlistBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818B9A71BD02BD70021CDDB /* playlistBrowserTests.swift */; };
+		F818B9B31BD02BD70021CDDB /* playlistBrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818B9B21BD02BD70021CDDB /* playlistBrowserUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F818B9A41BD02BD70021CDDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F818B9871BD02BD70021CDDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F818B98E1BD02BD70021CDDB;
+			remoteInfo = playlistBrowser;
+		};
+		F818B9AF1BD02BD70021CDDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F818B9871BD02BD70021CDDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F818B98E1BD02BD70021CDDB;
+			remoteInfo = playlistBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F80C8AB31BD2F78900FFEBA0 /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		F80C8AB51BD2F7D900FFEBA0 /* SongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
+		F818B98F1BD02BD70021CDDB /* playlistBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playlistBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F818B9921BD02BD70021CDDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F818B9941BD02BD70021CDDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F818B9971BD02BD70021CDDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F818B9991BD02BD70021CDDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F818B99C1BD02BD70021CDDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F818B99E1BD02BD70021CDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F818B9A31BD02BD70021CDDB /* playlistBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = playlistBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F818B9A71BD02BD70021CDDB /* playlistBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playlistBrowserTests.swift; sourceTree = "<group>"; };
+		F818B9A91BD02BD70021CDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F818B9AE1BD02BD70021CDDB /* playlistBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = playlistBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F818B9B21BD02BD70021CDDB /* playlistBrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playlistBrowserUITests.swift; sourceTree = "<group>"; };
+		F818B9B41BD02BD70021CDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F818B98C1BD02BD70021CDDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F818B9A01BD02BD70021CDDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F818B9AB1BD02BD70021CDDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F818B9861BD02BD70021CDDB = {
+			isa = PBXGroup;
+			children = (
+				F818B9911BD02BD70021CDDB /* playlistBrowser */,
+				F818B9A61BD02BD70021CDDB /* playlistBrowserTests */,
+				F818B9B11BD02BD70021CDDB /* playlistBrowserUITests */,
+				F818B9901BD02BD70021CDDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F818B9901BD02BD70021CDDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F818B98F1BD02BD70021CDDB /* playlistBrowser.app */,
+				F818B9A31BD02BD70021CDDB /* playlistBrowserTests.xctest */,
+				F818B9AE1BD02BD70021CDDB /* playlistBrowserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F818B9911BD02BD70021CDDB /* playlistBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				F818B9941BD02BD70021CDDB /* ViewController.swift */,
+				F80C8AB31BD2F78900FFEBA0 /* PlaylistViewController.swift */,
+				F80C8AB51BD2F7D900FFEBA0 /* SongViewController.swift */,
+				F818B9921BD02BD70021CDDB /* AppDelegate.swift */,
+				F818B9961BD02BD70021CDDB /* Main.storyboard */,
+				F818B9991BD02BD70021CDDB /* Assets.xcassets */,
+				F818B99B1BD02BD70021CDDB /* LaunchScreen.storyboard */,
+				F818B99E1BD02BD70021CDDB /* Info.plist */,
+			);
+			path = playlistBrowser;
+			sourceTree = "<group>";
+		};
+		F818B9A61BD02BD70021CDDB /* playlistBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				F818B9A71BD02BD70021CDDB /* playlistBrowserTests.swift */,
+				F818B9A91BD02BD70021CDDB /* Info.plist */,
+			);
+			path = playlistBrowserTests;
+			sourceTree = "<group>";
+		};
+		F818B9B11BD02BD70021CDDB /* playlistBrowserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F818B9B21BD02BD70021CDDB /* playlistBrowserUITests.swift */,
+				F818B9B41BD02BD70021CDDB /* Info.plist */,
+			);
+			path = playlistBrowserUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F818B98E1BD02BD70021CDDB /* playlistBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F818B9B71BD02BD70021CDDB /* Build configuration list for PBXNativeTarget "playlistBrowser" */;
+			buildPhases = (
+				F818B98B1BD02BD70021CDDB /* Sources */,
+				F818B98C1BD02BD70021CDDB /* Frameworks */,
+				F818B98D1BD02BD70021CDDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = playlistBrowser;
+			productName = playlistBrowser;
+			productReference = F818B98F1BD02BD70021CDDB /* playlistBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F818B9A21BD02BD70021CDDB /* playlistBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F818B9BA1BD02BD70021CDDB /* Build configuration list for PBXNativeTarget "playlistBrowserTests" */;
+			buildPhases = (
+				F818B99F1BD02BD70021CDDB /* Sources */,
+				F818B9A01BD02BD70021CDDB /* Frameworks */,
+				F818B9A11BD02BD70021CDDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F818B9A51BD02BD70021CDDB /* PBXTargetDependency */,
+			);
+			name = playlistBrowserTests;
+			productName = playlistBrowserTests;
+			productReference = F818B9A31BD02BD70021CDDB /* playlistBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F818B9AD1BD02BD70021CDDB /* playlistBrowserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F818B9BD1BD02BD70021CDDB /* Build configuration list for PBXNativeTarget "playlistBrowserUITests" */;
+			buildPhases = (
+				F818B9AA1BD02BD70021CDDB /* Sources */,
+				F818B9AB1BD02BD70021CDDB /* Frameworks */,
+				F818B9AC1BD02BD70021CDDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F818B9B01BD02BD70021CDDB /* PBXTargetDependency */,
+			);
+			name = playlistBrowserUITests;
+			productName = playlistBrowserUITests;
+			productReference = F818B9AE1BD02BD70021CDDB /* playlistBrowserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F818B9871BD02BD70021CDDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Mustafa Bedir Tapkan";
+				TargetAttributes = {
+					F818B98E1BD02BD70021CDDB = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					F818B9A21BD02BD70021CDDB = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = F818B98E1BD02BD70021CDDB;
+					};
+					F818B9AD1BD02BD70021CDDB = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = F818B98E1BD02BD70021CDDB;
+					};
+				};
+			};
+			buildConfigurationList = F818B98A1BD02BD70021CDDB /* Build configuration list for PBXProject "playlistBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F818B9861BD02BD70021CDDB;
+			productRefGroup = F818B9901BD02BD70021CDDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F818B98E1BD02BD70021CDDB /* playlistBrowser */,
+				F818B9A21BD02BD70021CDDB /* playlistBrowserTests */,
+				F818B9AD1BD02BD70021CDDB /* playlistBrowserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F818B98D1BD02BD70021CDDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F818B99D1BD02BD70021CDDB /* LaunchScreen.storyboard in Resources */,
+				F818B99A1BD02BD70021CDDB /* Assets.xcassets in Resources */,
+				F818B9981BD02BD70021CDDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F818B9A11BD02BD70021CDDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F818B9AC1BD02BD70021CDDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F818B98B1BD02BD70021CDDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F818B9951BD02BD70021CDDB /* ViewController.swift in Sources */,
+				F80C8AB61BD2F7D900FFEBA0 /* SongViewController.swift in Sources */,
+				F818B9931BD02BD70021CDDB /* AppDelegate.swift in Sources */,
+				F80C8AB41BD2F78900FFEBA0 /* PlaylistViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F818B99F1BD02BD70021CDDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F818B9A81BD02BD70021CDDB /* playlistBrowserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F818B9AA1BD02BD70021CDDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F818B9B31BD02BD70021CDDB /* playlistBrowserUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F818B9A51BD02BD70021CDDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F818B98E1BD02BD70021CDDB /* playlistBrowser */;
+			targetProxy = F818B9A41BD02BD70021CDDB /* PBXContainerItemProxy */;
+		};
+		F818B9B01BD02BD70021CDDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F818B98E1BD02BD70021CDDB /* playlistBrowser */;
+			targetProxy = F818B9AF1BD02BD70021CDDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F818B9961BD02BD70021CDDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F818B9971BD02BD70021CDDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F818B99B1BD02BD70021CDDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F818B99C1BD02BD70021CDDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F818B9B51BD02BD70021CDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F818B9B61BD02BD70021CDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F818B9B81BD02BD70021CDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = playlistBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobDeviL.playlistBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F818B9B91BD02BD70021CDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = playlistBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobDeviL.playlistBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F818B9BB1BD02BD70021CDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = playlistBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobDeviL.playlistBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/playlistBrowser.app/playlistBrowser";
+			};
+			name = Debug;
+		};
+		F818B9BC1BD02BD70021CDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = playlistBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobDeviL.playlistBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/playlistBrowser.app/playlistBrowser";
+			};
+			name = Release;
+		};
+		F818B9BE1BD02BD70021CDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = playlistBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobDeviL.playlistBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = playlistBrowser;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F818B9BF1BD02BD70021CDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = playlistBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mobDeviL.playlistBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = playlistBrowser;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F818B98A1BD02BD70021CDDB /* Build configuration list for PBXProject "playlistBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F818B9B51BD02BD70021CDDB /* Debug */,
+				F818B9B61BD02BD70021CDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F818B9B71BD02BD70021CDDB /* Build configuration list for PBXNativeTarget "playlistBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F818B9B81BD02BD70021CDDB /* Debug */,
+				F818B9B91BD02BD70021CDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F818B9BA1BD02BD70021CDDB /* Build configuration list for PBXNativeTarget "playlistBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F818B9BB1BD02BD70021CDDB /* Debug */,
+				F818B9BC1BD02BD70021CDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F818B9BD1BD02BD70021CDDB /* Build configuration list for PBXNativeTarget "playlistBrowserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F818B9BE1BD02BD70021CDDB /* Debug */,
+				F818B9BF1BD02BD70021CDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F818B9871BD02BD70021CDDB /* Project object */;
+}
