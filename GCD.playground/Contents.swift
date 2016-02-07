@@ -1,5 +1,5 @@
-var a = 24
-var b = 18
+var a = 69
+var b = 33
 
 var maxDiv = min(a, b)
 var maxVal = max(a, b)
