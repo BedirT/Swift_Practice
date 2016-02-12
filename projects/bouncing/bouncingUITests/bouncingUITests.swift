@@ -2,7 +2,7 @@
 //  bouncingUITests.swift
 //  bouncingUITests
 //
-//  Created by Mustafa Bedir Tapkan on 2/9/16.
+//  Created by Mustafa Bedir Tapkan on 2/12/16.
 //  Copyright © 2016 Mustafa Bedir Tapkan. All rights reserved.
 //
 

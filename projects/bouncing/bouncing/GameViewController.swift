@@ -2,7 +2,7 @@
 //  GameViewController.swift
 //  bouncing
 //
-//  Created by Mustafa Bedir Tapkan on 2/9/16.
+//  Created by Mustafa Bedir Tapkan on 2/12/16.
 //  Copyright (c) 2016 Mustafa Bedir Tapkan. All rights reserved.
 //
 
@@ -14,7 +14,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let scene = GameScene(fileNamed:"GameScene") {
+        if let scene = GameScene(fileNamed:"MainMenu") {
             // Configure the view.
             let skView = self.view as! SKView
             skView.showsFPS = true

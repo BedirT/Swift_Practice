@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F8FD429C1C6A5F10001BB193"
+               BlueprintIdentifier = "F89C02A41C6E7F8C00B0A15D"
                BuildableName = "bouncing.app"
                BlueprintName = "bouncing"
                ReferencedContainer = "container:bouncing.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F8FD42B41C6A5F10001BB193"
+               BlueprintIdentifier = "F89C02BC1C6E7F8C00B0A15D"
                BuildableName = "bouncingTests.xctest"
                BlueprintName = "bouncingTests"
                ReferencedContainer = "container:bouncing.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F8FD42BF1C6A5F10001BB193"
+               BlueprintIdentifier = "F89C02C71C6E7F8C00B0A15D"
                BuildableName = "bouncingUITests.xctest"
                BlueprintName = "bouncingUITests"
                ReferencedContainer = "container:bouncing.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F8FD429C1C6A5F10001BB193"
+            BlueprintIdentifier = "F89C02A41C6E7F8C00B0A15D"
             BuildableName = "bouncing.app"
             BlueprintName = "bouncing"
             ReferencedContainer = "container:bouncing.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F8FD429C1C6A5F10001BB193"
+            BlueprintIdentifier = "F89C02A41C6E7F8C00B0A15D"
             BuildableName = "bouncing.app"
             BlueprintName = "bouncing"
             ReferencedContainer = "container:bouncing.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F8FD429C1C6A5F10001BB193"
+            BlueprintIdentifier = "F89C02A41C6E7F8C00B0A15D"
             BuildableName = "bouncing.app"
             BlueprintName = "bouncing"
             ReferencedContainer = "container:bouncing.xcodeproj">
