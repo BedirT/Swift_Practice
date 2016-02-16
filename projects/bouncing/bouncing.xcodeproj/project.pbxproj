@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F80A7C931C724595001E34CB /* ball.sks in Resources */ = {isa = PBXBuildFile; fileRef = F80A7C921C724595001E34CB /* ball.sks */; };
 		F89C02A91C6E7F8C00B0A15D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C02A81C6E7F8C00B0A15D /* AppDelegate.swift */; };
 		F89C02AB1C6E7F8C00B0A15D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F89C02AA1C6E7F8C00B0A15D /* GameScene.sks */; };
 		F89C02AD1C6E7F8C00B0A15D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89C02AC1C6E7F8C00B0A15D /* GameScene.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F80A7C921C724595001E34CB /* ball.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ball.sks; sourceTree = "<group>"; };
 		F89C02A51C6E7F8C00B0A15D /* bouncing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bouncing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89C02A81C6E7F8C00B0A15D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F89C02AA1C6E7F8C00B0A15D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				F89C02AC1C6E7F8C00B0A15D /* GameScene.swift */,
 				F89C02DA1C6E94C200B0A15D /* MainMenu.sks */,
 				F89C02DC1C6E94EB00B0A15D /* MainMenu.swift */,
+				F80A7C921C724595001E34CB /* ball.sks */,
 				F89C02AE1C6E7F8C00B0A15D /* GameViewController.swift */,
 				F89C02B01C6E7F8C00B0A15D /* Main.storyboard */,
 				F89C02B31C6E7F8C00B0A15D /* Assets.xcassets */,
@@ -246,6 +249,7 @@
 			files = (
 				F89C02AB1C6E7F8C00B0A15D /* GameScene.sks in Resources */,
 				F89C02B71C6E7F8C00B0A15D /* LaunchScreen.storyboard in Resources */,
+				F80A7C931C724595001E34CB /* ball.sks in Resources */,
 				F89C02B41C6E7F8C00B0A15D /* Assets.xcassets in Resources */,
 				F89C02DB1C6E94C200B0A15D /* MainMenu.sks in Resources */,
 				F89C02B21C6E7F8C00B0A15D /* Main.storyboard in Resources */,
@@ -503,6 +507,7 @@
 				F89C02D31C6E7F8C00B0A15D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F89C02D41C6E7F8C00B0A15D /* Build configuration list for PBXNativeTarget "bouncingTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				F89C02D61C6E7F8C00B0A15D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F89C02D71C6E7F8C00B0A15D /* Build configuration list for PBXNativeTarget "bouncingUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				F89C02D91C6E7F8C00B0A15D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
