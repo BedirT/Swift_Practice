@@ -12,16 +12,24 @@ let wallMask : UInt32 = 0x1 << 0 // 1
 let ballMask : UInt32 = 0x1 << 1 // 2
 let pegMask : UInt32 = 0x1 << 2 // 4
 let squareMask : UInt32 = 0x1 << 3 // 8
+let orangePegMask : UInt32 = 0x1 << 4 // 16
 
 class GameScene: SKScene , SKPhysicsContactDelegate {
     
     var cannon: SKSpriteNode!
+    var block: SKSpriteNode!
     var touchLocation: CGPoint = CGPointZero
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
         cannon = self.childNodeWithName("cannon") as! SKSpriteNode
+        block = self.childNodeWithName("block") as! SKSpriteNode
         self.physicsWorld.contactDelegate = self
+        
+        let degrees = 90.0
+        let rads = degrees * M_PI / 180.0
+        let action = SKAction.rotateByAngle(CGFloat(rads), duration: 3)
+        block.runAction(SKAction.repeatActionForever(action))
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -46,7 +54,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
         let vx: CGFloat = CGFloat(cosf(angleInRadians)) * speed
         let vy: CGFloat = CGFloat(sinf(angleInRadians)) * speed
         ball.physicsBody?.applyImpulse(CGVectorMake(vx, vy))
-        ball.physicsBody?.collisionBitMask = wallMask | ballMask | pegMask
+        ball.physicsBody?.collisionBitMask = wallMask | ballMask | pegMask | orangePegMask
         ball.physicsBody?.contactTestBitMask = ball.physicsBody!.collisionBitMask | squareMask
     }
    
@@ -60,5 +68,23 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
     func didBeginContact(contact: SKPhysicsContact) {
         let ball = (contact.bodyA.categoryBitMask == ballMask ) ? contact.bodyA : contact.bodyB
         let other = (ball == contact.bodyA) ? contact.bodyB : contact.bodyA
+        
+        if other.categoryBitMask == pegMask || other.categoryBitMask == orangePegMask {
+            self.didHitPeg(other)
+        }else if other.categoryBitMask == squareMask {
+            print("hit square!")
+        }else if other.categoryBitMask == wallMask {
+            print("hit wall!")
+        }else if other.categoryBitMask == ballMask {
+            print("hit ball!")
+        }
+        
+    }
+    
+    func didHitPeg(peg:SKPhysicsBody){
+        let spark:SKEmitterNode = SKEmitterNode(fileNamed: "SparkParticle")!
+        spark.position = peg.node!.position
+        self.addChild(spark)
+        peg.node?.removeFromParent()
     }
 }
