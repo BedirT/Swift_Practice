@@ -9,3 +9,13 @@ var gen =   birth == 1000 ? "OLEEEY" :
             "NONE"
 
 // PERFECT WAY TO USE
+
+let defaultSize = "M"
+
+var selected: String?
+
+let order = selected ?? defaultSize
+
+selected  = "1"
+
+let amc = selected ?? defaultSize
